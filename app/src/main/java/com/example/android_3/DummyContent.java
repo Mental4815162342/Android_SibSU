@@ -4,6 +4,7 @@ import java.util.List;
 
 /** Вспомогательный класс для заполнения списка */
 public class DummyContent {
+
     /** Списочный массив элементов */
     public static final List<DummyItem> ITEMS = new ArrayList<DummyItem>();
     private static final int COUNT = 25;
@@ -16,6 +17,7 @@ public class DummyContent {
             for (int j = 0; j < k; j++) { builder.append("\n Детальная информация. "); }
             ITEMS.add(new DummyItem(String.valueOf(k), "Элемент " + k, builder.toString()));
         }
+
     }
 
     /** Создание класса элементов для списка. */
